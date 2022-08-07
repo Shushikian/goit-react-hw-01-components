@@ -5,7 +5,6 @@ import { CardUserName } from './CardUserName'
 import { CardTag } from './CardTag'
 import { CardLocation } from './CardLocation'
 import { Box } from 'components/Box'
-import { border, layout } from 'styled-system'
 
 export const SocialCard = ({ username, tag, location, avatar, stats }) => {
     
