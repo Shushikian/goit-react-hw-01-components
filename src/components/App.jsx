@@ -1,16 +1,17 @@
+import { SocialCard } from "hw/hw1/SocialCard";
+import user from "hw/hw1/user.json"
+import { Box } from 'components/Box'
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Box m={4}>
+      <SocialCard
+  username={user.username}
+  tag={user.tag}
+  location={user.location}
+  avatar={user.avatar}
+  stats={user.stats}
+/>
+    </Box>
   );
 };
