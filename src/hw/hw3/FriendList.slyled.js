@@ -12,8 +12,8 @@ export const StatListItemStyle = styled.li`
     display: flex;
     align-items: center;
     padding: ${p => p.theme.space[3]}px;
-    margin: ${p => p.theme.space[3]}px;
-    width: 20%;
+    margin-top: ${p => p.theme.space[3]}px;
+    width: 234px;
     border: ${ p => p.theme.borders.normal};
     border-color: ${ p => p.theme.colors.text};
     box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 14%) 0px 1px 1px, rgb(0 0 0 / 20%) 0px 2px 1px;
