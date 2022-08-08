@@ -8,6 +8,7 @@ export const CardImage = ({ image }) => {
 const CardImageStyle = styled.img`
     width: 100px;
     border-radius: ${p => p.theme.radii.round};
+    border: ${p => p.theme.borders.normal};
 `;
 
 CardImage.ProtoTypes = {

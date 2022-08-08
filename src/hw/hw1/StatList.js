@@ -24,7 +24,7 @@ const StatListStyle = styled.ul`
     list-style: none;
     margin: ${p => p.theme.space[0]}px;
     border: ${p => p.theme.borders.normal};
-    padding: ${p => p.theme.space[4]}px;
+    padding: ${p => p.theme.space[0]}px;
     justify-content: space-between;
     background-color: ${p => p.theme.colors.text};
 `;
@@ -33,6 +33,9 @@ const StatListItemStyle = styled.li`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: ${p => p.theme.space[4]}px;
+    width: 33.33%;
+    border: ${ p=> p.theme.borders.normal};
 `;
 
 const StatListItemLabelStyle = styled.span`

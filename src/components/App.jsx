@@ -1,6 +1,8 @@
 import { SocialCard } from "hw/hw1/SocialCard";
-import user from "hw/hw1/user.json"
+import { StatistickBar } from "hw/hw2/StatistickBar";
 import { Box } from 'components/Box'
+import user from "hw/hw1/user.json"
+import data from "hw/hw2/data.json"
 
 export const App = () => {
   return (
@@ -11,7 +13,13 @@ export const App = () => {
   location={user.location}
   avatar={user.avatar}
   stats={user.stats}
-/>
+      />
+     
+       <StatistickBar title='Upload stats' statistics={data}/>
+      
+    
     </Box>
+   
+          
   );
 };
