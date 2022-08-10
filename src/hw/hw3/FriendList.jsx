@@ -5,7 +5,7 @@ import { FriendListItem } from './FriendListItem';
 export const FriendList = ({ friends }) => {
     return <StatListStyle>
         {friends.map(({ avatar, name, isOnline, id }) =>
-            <FriendListItem avatar={avatar} name={name} isOnline={isOnline} id={id} />)}
+            <FriendListItem key={id} avatar={avatar} name={name} isOnline={isOnline} id={id} />)}
 </StatListStyle>
 };
 
