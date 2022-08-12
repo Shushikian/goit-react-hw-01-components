@@ -23,7 +23,8 @@ export const Status = styled.span`
     margin: ${p => p.theme.space[3]}px;
     width: 10px;
     height: 10px;
-    border-radius: 50%;
+    border-radius: 50%;    
+    ${({ isOnline }) => isOnline ? 'background-color:  green;': 'background-color:  red;'}
 `;
 
 export const CardImageStyle = styled.img`
